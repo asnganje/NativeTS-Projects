@@ -1,0 +1,14 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "This is the api built for our smart-cycle-market",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nganje Suleiman",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
