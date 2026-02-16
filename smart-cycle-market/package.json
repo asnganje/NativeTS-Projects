@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "tsc-alias": "^1.8.16",
-    "vite-tsconfig-paths": "^6.1.1"
-  }
-}
