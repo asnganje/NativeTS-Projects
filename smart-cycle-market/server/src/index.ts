@@ -28,7 +28,7 @@ const start = async(dbUri: string | undefined) : Promise<void> => {
     console.log(`Server is listening on port ${port}`);
 });
   } catch (error) {
-    console.log("Error starting up the app");
+    console.log("Error running the server...");
     
   }
 }
