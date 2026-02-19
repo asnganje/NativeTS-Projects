@@ -1,5 +1,5 @@
-import mongoose from "mongoose"
+import { connect } from "mongoose";
 
 export const connectDB = async (uri: string): Promise<void> => {
-  await mongoose.connect(uri)
-} 
+  await connect(uri);
+};
