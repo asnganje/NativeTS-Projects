@@ -18,9 +18,12 @@ app.use("/auth", authRouter);
 const port = 3000;
 const uri = process.env.URI
 
-const start = async() => {
+const start = async(dbUri: string | undefined) : Promise<void> => {
   try {
-    await connectDB(uri)
+    if (!dbUri) {
+      throw new Error("MongoDB URI is missing!")
+    }
+    await connectDB(dbUri)
     app.listen(port, () => {
     console.log(`Server is listening on port ${port}`);
 });
@@ -30,4 +33,4 @@ const start = async() => {
   }
 }
 
-start()
+start(uri)
